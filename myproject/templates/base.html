@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>
+        {% block title %}
+        Home
+        {% endblock title %}
+    </title>
+</head>
+
+<body>
+<header>
+    <div class="head">
+        <div class="head__item">
+            <a href="/admin">Admin</a>
+            <div class="item1"><a href="{% url 'blog:post_list_view' %}">Blog</a></div>
+            <div class="item2"><a href="{% url 'blog:home_view' %}">Home</a></div>
+
+
+        </div>
+    </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="wrapper">
+
+        <section>
+
+            {% block content %}
+            <div class="content">
+
+                <div class="content__item1">
+                    <div class="item1__img">
+                        <img class="bird"
+                             src="https://images.unsplash.com/photo-1587500020549-2144e7edcb1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
+                             alt="White bird flying with blue sky and clouds behind">
+                    </div>
+                    <div class="item1__body">
+                        <div class="item1__title">
+                            <div>Some title</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__item2">
+                    <div class="item2__body">
+                        <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit. <b>Veritatis</b> dolore
+                            provident at
+                            ut
+                            consectetur quos explicabo quo vitae consequatur, eos quisquam est saepe?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas deleniti, dolores sequi
+                            minus
+                            optio ad omnis, ipsam maiores aut odit atque consectetur vel praesentium velit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="content2__title">
+                    <div>Lorem, ipsum.</div>
+                </div>
+                <div class="content2__body">
+                    <div class="text">
+                        <b>Lorem ipsum</b> dolor sit amet consectetur, adipisicing elit. Modi explicabo dolorum
+                        voluptatibus
+                        magnam, laudantium voluptatem culpa, error ipsam in asperiores, dolorem rerum suscipit ab?
+                        Laboriosam accusamus, voluptatem explicabo maiores nulla, temporibus iste non ullam in aliquam
+                        odio
+                        vel commodi libero provident, minus aut corrupti cum beatae amet. Laboriosam, quos blanditiis.
+                    </div>
+                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <b> Fugiat temporibus
+                        harum,
+                        minus porro</b>
+                        exercitationem pariatur rem quasi dolorum, id ab laborum corporis nobis praesentium voluptatibus
+                        quia optio assumenda odit eos minima quis vitae velit. Cumque vel id molestiae consequatur nisi
+                        necessitatibus blanditiis mollitia, neque itaque rerum, consectetur cum voluptatibus, deserunt
+                        ea
+                        quam ipsa quibusdam.
+                        Repellendus <b> dolores est deleniti suscipit doloribus quia beatae, ex corrupti
+                            ab velit ducimus facilis error. Quia quaerat illo quisquam architecto voluptatem </b>similique
+                        nisi
+                        ullam totam alias ut porro necessitatibus tempore iure suscipit illum fugiat quibusdam, ipsa
+                        assumenda, impedit distinctio quae beatae velit deleniti fuga? Quam ratione minima, quo quasi
+                        consequatur facere sint odio. Voluptate, blanditiis eos sint dolores, a dolorem, eaque
+                        voluptates
+                        delectus ad velit dignissimos?
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+{% include 'include/footer.html' %}
+{% endblock content %}
+
+
+</body>
+</html>
