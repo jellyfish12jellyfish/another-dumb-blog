@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 
 {% block title %}
+
 {{ post.title }}
+
 {% endblock title %}
 
 {% block content %}
-{{ post.title|safe}}
-
-{{ post.body|safe}}
-
+<div class="content2__title blog__title">
+    {{ post.title|safe}}
+</div>
+<div class="text blog__text">
+    {{ post.body|safe}}
+</div>
 {% endblock content %}

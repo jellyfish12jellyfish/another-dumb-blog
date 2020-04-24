@@ -250,6 +250,7 @@ section,
    background-color: #f1f0f0;
    padding: 50px;
    text-align: center;
+   margin-top: 50px;
 }
 
 .year {
@@ -286,6 +287,9 @@ section,
 
 .text {
    padding: 0 30px 15px 30px;
+}
+.blog__text{
+ margin-bottom: 150px;
 }
 .my_pagination{
     padding: 20px;
