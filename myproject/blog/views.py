@@ -9,12 +9,11 @@ def home_view(request, *args, **kwargs):
 
 class PostListView(ListView):
     template_name = 'post/list_view.html'
-    queryset = Post.published.all()
+    queryset = Post.published.all().order_by('title')
 
     model = Post
     context_object_name = 'pages'
     paginate_by = 2
-
 
 
 class PostDetailView(DetailView):
