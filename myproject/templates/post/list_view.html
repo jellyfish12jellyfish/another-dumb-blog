@@ -8,12 +8,15 @@ Posts
 
 {% for post in object_list %}
 <div class="content2__title blog__title">
-    {{ post.title|safe }}
-
+    <a href="{{ post.id }}">{{ post.title|safe }}</a>
 </div>
+
 <div class="text">
     {{ post.body|safe|truncatewords:90 }}
 </div>
 {% endfor %}
+
+
+{% include 'include/pagination.html' %}
 
 {% endblock content %}

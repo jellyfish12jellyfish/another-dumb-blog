@@ -266,6 +266,14 @@ section,
    font-size: 20px;
    margin: 50px 0px;
 }
+.blog__title a{
+    text-decoration: none;
+    color: #747474;
+}
+.blog__title a:hover{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
 
 .content2__title {
    text-align: center;
@@ -279,6 +287,11 @@ section,
 .text {
    padding: 0 30px 15px 30px;
 }
+.my_pagination{
+    padding: 20px;
+    margin: 20px;
+}
+
 
 /* todo: adaptive */
 
