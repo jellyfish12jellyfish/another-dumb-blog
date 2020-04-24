@@ -7,7 +7,13 @@ Posts
 {% block content %}
 
 {% for post in object_list %}
-{{ post.title|safe }}
+<div class="content2__title blog__title">
+    {{ post.title|safe }}
+
+</div>
+<div class="text">
+    {{ post.body|safe|truncatewords:90 }}
+</div>
 {% endfor %}
 
 {% endblock content %}

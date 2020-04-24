@@ -139,6 +139,7 @@ body {
 .footer {
    flex-shrink: 0;
 }
+
 /* ! end */
 
 * {
@@ -181,8 +182,8 @@ body {
 }
 
 .item2 a:hover {
-   box-shadow: 0 0 7px 1px #3493e698;
-   background-color: #3899ec;
+   box-shadow: 0 0 3px 1px #3493e698;
+   background-color: #449eec;
 
 }
 
@@ -222,6 +223,11 @@ body {
    margin: 0 90px 0 30px;
    align-self: center;
    font-size: 40px;
+}
+
+.blog__title {
+   border-bottom: 1px solid rgba(128, 128, 128, 0.227);
+
 }
 
 section,
@@ -265,6 +271,9 @@ section,
    text-align: center;
    padding: 20px;
    font-size: 40px;
+   font-family: 'Muli', sans-serif;
+   color: #747474;
+
 }
 
 .text {
