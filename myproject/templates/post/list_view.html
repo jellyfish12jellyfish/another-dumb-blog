@@ -10,9 +10,15 @@ Posts
 <div class="content2__title blog__title">
     <a href="{{ post.id }}">{{ post.title|safe }}</a>
 </div>
+<div class="text__blur">
+    <ul>
+        <ol>
+            <div class="text">
+                {{ post.body|safe|truncatewords:90 }}
+            </div>
+        </ol>
+    </ul>
 
-<div class="text">
-    {{ post.body|safe|truncatewords:90 }}
 </div>
 {% endfor %}
 
